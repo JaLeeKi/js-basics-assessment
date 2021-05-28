@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+const gitDefinition = 'Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+const gitHubDefinition = 'GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. '
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -32,8 +32,11 @@
     Create an object called 'init' with 'description' and 'code' properties 
     following the guidelines above to describe the init command.
 */
+const init = {
+    description: 'Inintalizes a local repository that can later be connected to a remote repository.',
+    code: 'git init'
+}
 
-//CODE HERE
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,15 +44,20 @@
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
-
+const clone = {
+    description: 'Copy a repo from Github and put it on my machine',
+    code: 'git clone REPO_URL'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+const status = {
+    description: 'Show the working tree status and file status',
+    code: 'git status'
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,7 +65,10 @@
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+const add ={
+    description: 'Add file contents to the index',
+    code: 'git add .'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +76,10 @@
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+const commit = {
+    description: 'Record changes to the repository',
+    code: 'git commit'
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,4 +88,7 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+const push = {
+    description: 'Update remote refs along with associated objects',
+    code: 'git push'
+}

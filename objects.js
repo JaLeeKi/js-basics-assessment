@@ -14,10 +14,12 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
-
-
-
+const me = {
+  firstName: 'Jade',
+  state: 'Utah',
+  age: 27,
+  greeter: function () { console.log('Hello! My name is ' + this.firstName + ' and I live in ' + this.state)}
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,4 +46,19 @@
   }
 */
 
-//CODE HERE
+function carFactory(make, model, year){
+  const car = {
+    make: make,
+    model: model,
+    year: year
+  }
+  if(car.year > 2018){
+     car.isNew = true
+  }else { 
+     car.isNew = false
+  }
+  console.log(car)
+}
+
+carFactory('Tesla', 'X', 2020)
+
